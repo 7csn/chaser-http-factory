@@ -1,0 +1,23 @@
+{
+  "name": "7csn/http-factory",
+  "description": "http 消息工厂，用于创建 http 消息组件。",
+  "type": "library",
+  "require": {
+    "php": ">=7.4.0",
+    "psr/http-factory": "^1.0",
+    "7csn/http-message": "dev-master"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "7csn",
+      "email": "1479672753@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "chaser\\http\\message\\": "src/"
+    }
+  }
+}
