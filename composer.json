@@ -5,7 +5,7 @@
   "require": {
     "php": ">=7.4.0",
     "psr/http-factory": "^1.0",
-    "7csn/http-message": "@dev"
+    "7csn/http-message": "dev-master"
   },
   "license": "MIT",
   "authors": [
