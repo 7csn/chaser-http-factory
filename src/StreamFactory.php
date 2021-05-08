@@ -23,9 +23,7 @@ class StreamFactory implements StreamFactoryInterface
      */
     public function createStream(string $content = ''): Stream
     {
-        $resource = fopen('php://temp', 'rw+');
-        fwrite($resource, $content);
-        return new Stream($resource);
+        return Stream::create($content);
     }
 
     /**
@@ -39,19 +37,7 @@ class StreamFactory implements StreamFactoryInterface
      */
     public function createStreamFromFile(string $filename, string $mode = 'r'): Stream
     {
-        if ($mode === '' || strpos('rwaxc', $mode[0]) === false) {
-            throw new InvalidArgumentException(sprintf('The mode %s is invalid', $mode));
-        }
-
-        if ($filename === '') {
-            throw new RuntimeException('Filename cannot be empty');
-        }
-
-        if (false === $resource = @fopen($filename, $mode)) {
-            throw new RuntimeException(sprintf('The file %s cannot be opened', $filename));
-        }
-
-        return $this->createStreamFromResource($resource);
+        return Stream::createFormFile($filename, $mode);
     }
 
     /**
