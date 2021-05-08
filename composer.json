@@ -5,7 +5,7 @@
   "require": {
     "php": ">=7.4.0",
     "psr/http-factory": "^1.0",
-    "7csn/http-message": "dev-master"
+    "7csn/http-message": "@dev"
   },
   "license": "MIT",
   "authors": [
@@ -14,7 +14,6 @@
       "email": "1479672753@qq.com"
     }
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "chaser\\http\\message\\": "src/"
