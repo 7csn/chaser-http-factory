@@ -7,14 +7,14 @@ namespace chaser\http\message;
 use Psr\Http\Message\ResponseFactoryInterface;
 
 /**
- * http 服务器响应工厂
+ * http 服务端响应工厂类
  *
  * @package chaser\http\message
  */
 class ResponseFactory implements ResponseFactoryInterface
 {
     /**
-     * 创建新的响应
+     * 创建新的服务端响应
      *
      * @param int $code
      * @param string $reasonPhrase

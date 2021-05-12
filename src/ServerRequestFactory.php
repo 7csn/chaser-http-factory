@@ -7,14 +7,14 @@ namespace chaser\http\message;
 use Psr\Http\Message\{ServerRequestFactoryInterface, UriInterface};
 
 /**
- * http 服务端接收请求工厂
+ * http 服务端接收请求工厂类
  *
  * @package chaser\http\message
  */
 class ServerRequestFactory implements ServerRequestFactoryInterface
 {
     /**
-     * 创建新的服务器接收请求
+     * 创建新的服务端接收请求
      *
      * @param string $method
      * @param UriInterface|string $uri

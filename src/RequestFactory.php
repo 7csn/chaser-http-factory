@@ -14,7 +14,7 @@ use Psr\Http\Message\{RequestFactoryInterface, UriInterface};
 class RequestFactory implements RequestFactoryInterface
 {
     /**
-     * 创建新的请求
+     * 创建新的客户端请求
      *
      * @param string $method
      * @param UriInterface|string $uri

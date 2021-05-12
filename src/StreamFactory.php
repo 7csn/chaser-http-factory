@@ -9,7 +9,7 @@ use Psr\Http\Message\StreamFactoryInterface;
 use RuntimeException;
 
 /**
- * 数据流工厂
+ * 数据流工厂类
  *
  * @package chaser\http\message
  */
